@@ -1,0 +1,114 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+html {
+   font-size: 62.5%;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#btn {
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   flex: 1;
+}
+#btn button {
+   font-family: 'Great Vibes', cursive;
+   min-width: 200px;
+   margin: 10px 0;
+   padding: 12px 24px;
+   color: white;
+   font-size: 3.5rem;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: all 0.1s ease;
+}
+#btn button:hover {
+   transform: translateY(-3px);
+}
+#btn button:active {
+   transform: translateY(0);
+}
+.color-1 {
+   background-image: linear-gradient(to top right, #ff0076, #590fb7);
+}
+.color-2 {
+   background-image: linear-gradient(to top right, #cb5eee, #4be1ec);
+}
+.color-3 {
+   background-image: linear-gradient(to top right, #402565, #30be96);
+}
+.color-4 {
+   background-image: linear-gradient(to top right, #737dfe, #ffcac9);
+}
+.color-5 {
+   background-image: linear-gradient(to right, #f06966, #fad6a6);
+}
+#modal {
+   height: 100vh;
+   width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0, 0.6);
+   transform: translateY(-100vh);
+   opacity: 0;
+   transition: all 0.5s ease;
+}
+/* ! */
+#modal.modal-display {
+   transform: translateY(0);
+   opacity: 1;
+}
+#modal .modal-container {
+   max-width: 1200px;
+   margin: 300px auto;
+}
+#modal .modal-container .modal-content {
+   width: 500px;
+   margin: 0 auto;
+   height: 300px;
+   padding: 20px;
+   border-radius: 10px;
+   background-color: white;
+   position: relative;
+}
+#modal .modal-container .modal-content h2 {
+   font-size: 3rem;
+   margin-top: 20px;
+}
+#modal .modal-container .modal-content p {
+   padding: 30px 0;
+   margin: 10px 0;
+   font-size: 2rem;
+   font-weight: 300;
+   border-top: 1px solid #ccc;
+   border-bottom: 1px solid #ccc;
+}
+#modal .modal-container .modal-content button {
+   position: absolute;
+   bottom: 20px;
+   right: 20px;
+   padding: 12px 24px;
+   font-size: 1.4rem;
+   border: none;
+   border-radius: 10px;
+   background-image: linear-gradient(to top right, #cb5eee, #4be1ec);
+   color: white;
+   cursor: pointer;
+   transition: hover 0.1s ease-out;
+   transition: all 0.3s linear;
+}
+#modal .modal-container .modal-content button:hover {
+   transform: scale(1.1);
+}
+.active-btn {
+   border-radius: 50% !important;
+   padding: 60px 30px !important;
+   transition: all 0.3s linear !important;
+}
